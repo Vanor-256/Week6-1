@@ -1,0 +1,602 @@
+/* Шапка */
+
+header {
+
+    width: 1920px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+nav {
+
+    margin: 0 -30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    justify-self: stretch;
+    flex-grow: 0.7;
+}
+
+#menu {
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.item {}
+
+
+
+button {
+    background-color: transparent;
+}
+
+#text-menu {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    /* identical to box height, or 164% */
+
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+/* 
+Титульная страница */
+.page1 {
+
+    position: relative;
+    overflow: hidden;
+
+    width: 1924px;
+    height: 1519px;
+    left: -2px;
+    top: -11px;
+
+    background-color: #165166;
+}
+
+/* Картинки */
+#plant1 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 932px;
+    height: 996px;
+    right: -64px;
+    top: 198px;
+}
+
+#grass1 {
+    position: absolute;
+    width: 1220.88px;
+    height: 308.09px;
+    left: 1330px;
+    bottom: 848px;
+
+    transform: matrix(0.19, -0.98, 0.98, 0.19, 0, 0);
+}
+
+#grass2 {
+    position: absolute;
+    width: 871.04px;
+    height: 232.19px;
+    right: 0px;
+    bottom: 309px;
+}
+
+#star1 {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 115px;
+    top: 233px;
+
+    opacity: 0.2;
+}
+
+#star2 {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 1004px;
+    top: 233px;
+}
+
+/* Grid-котейнер и его элементы */
+.grid-container {
+
+    width: 709px;
+    height: 791px;
+
+    position: absolute;
+    left: 152px;
+    top: 336px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 150px 1fr 44.5px 44.5px;
+
+
+
+}
+
+.grid-item {
+
+    margin: auto 0px;
+}
+
+/* Тексты */
+#grid-text1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 82px;
+    color: #FFFFFF;
+
+
+
+    grid-row: ;
+    grid-column: 1/-1;
+}
+
+#grid-text2 {
+    width: 550px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+
+    line-height: 40px;
+
+    grid-row: ;
+    grid-column: 1/-1;
+}
+
+/* Ссылка как кнопка  !Должна быть выше, не знаю как сделать */
+#grid-button {
+
+
+    grid-row: ;
+    grid-column: 1/2;
+    align-self: start;
+}
+
+#grid-button2 {
+    width: 188px;
+    height: 33px;
+
+    grid-row: ;
+    grid-column: 2;
+}
+
+/* Тексты-цифры */
+#grid-numbers1,
+#grid-numbers2,
+#grid-numbers3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+
+    color: #05FF00;
+
+    grid-row: 4/5;
+}
+
+
+#grid-text3,
+#grid-text4,
+#grid-text5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
+    /* identical to box height, or 164% */
+
+    text-transform: capitalize;
+
+    color: #EFEFEF;
+
+    grid-row: 5/6;
+}
+
+/* Where to find and Arrow */
+
+.where {
+    position: absolute;
+    width: 218px;
+    height: 48px;
+    left: 152px;
+    top: 1216px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.arrow {
+    position: absolute;
+    width: 94px;
+    height: 96.2px;
+    left: 408.07px;
+    bottom: 182.19px;
+}
+
+/* Социальные сети внизу*/
+.social {
+
+    width: 1625px;
+    height: 75px;
+
+    position: absolute;
+    left: 152px;
+    bottom: 107px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links {
+    margin: auto 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    /* identical to box height */
+
+    color: #78A677;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+/* Страница 2 с примерами растений */
+
+.page2 {
+
+    margin: auto 0px;
+    position: relative;
+    left: 205px;
+    top: 120px;
+    height: 914px;
+    width: 1533px;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 661px; */
+    grid-template-rows: 78px 76px 3fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+#Best {
+
+    grid-column: 1/4;
+    margin: auto 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 78px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #000000;
+}
+
+#text-best {
+
+    grid-column: 1/4;
+    margin: auto 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    /* or 158% */
+
+    text-align: center;
+    text-transform: lowercase;
+
+    color: #333333;
+}
+
+/* Цветок в квадрате */
+.first-plant {
+
+    position: relative;
+    top: 30px;
+    width: 500px;
+    height: 500px;
+    background: #165166;
+    border-radius: 10px;
+}
+
+/* Картинка цветок в квадрате */
+#alocasia {
+    position: absolute;
+    left: 32px;
+    bottom: 339px;
+    width: 395px;
+    height: 322px;
+}
+
+/* Заголовок первого квадрата */
+#first-plant-title {
+
+    position: absolute;
+    margin: auto 0px;
+
+    left: 124px;
+    top: 171px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+/* Текст первого квадрата */
+#first-plant-text {
+
+    position: absolute;
+    width: 423px;
+    margin: auto 0px;
+    left: 38px;
+    top: 227px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #CDCDCD;
+}
+
+/* Кнопка на первом квадрате */
+.first-plant button {
+    position: absolute;
+    width: 231px;
+    height: 50px;
+    left: 124px;
+    bottom: 47px;
+}
+
+/* Второй цветок в квадрате */
+.second-plant {
+
+    position: relative;
+    left: 12.5%;
+    top: 30px;
+    width: 406px;
+    height: 406px;
+    background: #165166;
+    border-radius: 10px;
+}
+
+/* картинка цветка на 2й карточке */
+#peace-lily {
+    position: absolute;
+    left: 53px;
+    bottom: 262px;
+}
+
+/* Заголовок 2й карточки */
+#second-plant-title {
+    position: absolute;
+    margin: auto 0px;
+    left: 136px;
+    top: 169px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* текст 2й карточки */
+#second-plant-text {
+    position: absolute;
+    width: 369px;
+    margin: auto 0px;
+    left: 18px;
+    bottom: 97px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    text-align: center;
+    text-transform: lowercase;
+    color: #CDCDCD;
+}
+
+
+/* 3я карточка с цветком */
+.third-plant {
+
+    position: relative;
+    top: 30px;
+    width: 300px;
+    height: 300px;
+    background: #165166;
+    border-radius: 10px;
+}
+
+/* Картинка цветка 3й карточки */
+#camille {
+    position: absolute;
+    left: 30px;
+    bottom: 221px;
+}
+
+/* заголовок 3й карточки */
+#third-plant-title {
+    margin: auto 0px;
+    position: absolute;
+    left: 73px;
+    top: 110px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+/* Текст 3й карточки */
+#third-plant-text {
+    margin: auto 0px;
+    position: absolute;
+    width: 252px;
+    left: 25px;
+    bottom: 49px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #CDCDCD;
+}
+
+/*--------------------------------------------------------*/
+/*Страница 3*/
+.page3 {
+    position: relative;
+    width: 1927px;
+    height: 1020px;
+    top: 268px;
+    margin: auto 0px;
+    background: #165166;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    justify-items: start;
+    align-items: end;
+}
+
+/* Две полукруглых картинки */
+.two-flowers {
+
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+
+#plant-bottom {
+    position: absolute;
+    margin: auto 0px;
+    width: 457px;
+    height: 590px;
+    left: 154px;
+    bottom: 56px;
+}
+
+#plant-front {
+    position: absolute;
+    margin: auto 0px;
+    left: 320px;
+    top: 145px;
+}
+
+/* Большой текст */
+#big-text {
+
+
+    position: absolute;
+    top: 277px;
+    margin: auto 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 78px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+/* Малый текст */
+#small-text {
+
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    /* or 158% */
+
+    text-transform: lowercase;
+
+    color: #BCB9B9;
+
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+/* Кнопка View More */
+.view-more {
+
+
+    position: absolute;
+    bottom: 191px;
+
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
